@@ -8,9 +8,9 @@ import {
 import SideNav from "../SideNav/SideNav";
 import Header from "../Header/Header";
 import GraphViews from "../GraphViews/GraphViews";
-import { SIDENAV_MENU_ITEMS } from "../../constants/constants";
 import logo from "../../assets/logo2.jpg";
 import "./Dashboard.css";
+import { MENU_ITEMS } from "../../constants/constants";
 
 export default function Dashboard() {
   return (
@@ -25,7 +25,7 @@ export default function Dashboard() {
             <Header />
           </div>
           <Routes>
-            {SIDENAV_MENU_ITEMS?.map((menuItems) => (
+            {MENU_ITEMS?.map((menuItems) => (
               <Route
                 path={menuItems.pathLink}
                 element={<GraphViews />}

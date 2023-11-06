@@ -5,7 +5,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import DescriptionIcon from "@mui/icons-material/Description";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 
-export const SIDENAV_MENU_ITEMS = [
+export const MENU_ITEMS = [
   { icon: <DashboardIcon />, label: "Dashboard", pathLink: "dashboard" },
   {
     icon: <AccountBalanceWalletIcon />,

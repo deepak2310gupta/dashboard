@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { SIDENAV_MENU_ITEMS } from "../../constants/constants";
 import "./SideNav.css";
+import { MENU_ITEMS } from "../../constants/constants";
 
 export default function SideNav({ logo }) {
   const [selectedTab, setSelectedTab] = useState("dashboard");
@@ -19,7 +19,7 @@ export default function SideNav({ logo }) {
         <h2 className="org-name">Equity</h2>
       </div>
       <div className="bottom-section">
-        {SIDENAV_MENU_ITEMS?.map((menuItem) => (
+        {MENU_ITEMS.map((menuItem) => (
           <div
             className={`nav-item ${
               selectedTab === menuItem.pathLink ? "active" : ""
